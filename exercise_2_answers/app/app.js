@@ -9,11 +9,21 @@ var AppComponent = ng.core
     selector: 'app',
     template:
     `
-      <div style="width:400px; height:400px; border:1px solid black"></div>
+      <div
+        style="width:400px; height:400px; border:1px solid black"
+        (mousemove)="handleMouseMove($event)"
+      >
+      x: {{x}}, y: {{y}}
+      </div>
     `
   })
   .Class({
-    constructor: function() {}
+    constructor: function() {
+      this.handleMouseMove = (e) => {
+        this.x = e.clientX;
+        this.y = e.clientY;
+      }
+    }
   });
 
 

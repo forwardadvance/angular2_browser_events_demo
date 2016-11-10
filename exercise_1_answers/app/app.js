@@ -8,12 +8,15 @@ var AppComponent = ng.core
     selector: "app",
     template:
     `
+      <a (click)="i=i+1">Clicked {{i}} Times</a>
     `
   })
   .Class({
     constructor: function() {
+      this.i = 0
     }
   })
+
 
 /**
   * The App Module
