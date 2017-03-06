@@ -1,8 +1,4 @@
-// Exercise - Mouse Coordinates
-
-// We are going to access the mouse coordinates in a div
-// When the user clicks on the div, grab the mouse coordinates from the event and output them on the page.
-// For bonus points, make this happen when on mousemove
+// Exercise - LLars Bunderchump
 
 var heroModel = {
   name: "LLars Bunderchump",
